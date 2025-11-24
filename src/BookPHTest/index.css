@@ -1,0 +1,95 @@
+.ph-page {
+  padding: 30px;
+  background: #f4f9f4;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2e7d32;
+  margin-bottom: 30px;
+}
+
+.ph-form {
+  width: 100%;
+  max-width: 480px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+}
+
+.ph-form label {
+  font-weight: 600;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.ph-form input {
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  padding: 12px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.submit-btn:hover {
+  background: #1b5e20;
+}
+
+/* SUCCESS CARD */
+.success-card {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.success-card h3 {
+  font-size: 1.8rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.success-card p {
+  font-size: 1.1rem;
+  margin: 6px 0;
+}
+
+.home-btn {
+  margin-top: 18px;
+  padding: 12px 20px;
+  background: #1b5e20;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.home-btn:hover {
+  background: #145417;
+}

@@ -1,0 +1,99 @@
+.inorganic-page {
+  padding: 30px;
+  max-width: 1100px;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Step Row: IMAGE LEFT — TEXT RIGHT */
+.step-row {
+  display: flex;
+  gap: 20px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  align-items: center;
+}
+
+.step-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.step-info {
+  flex: 1;
+  text-align: left;
+}
+
+.step-info h3 {
+  margin: 0 0 8px;
+  color: #2e7d32;
+  font-size: 1.3rem;
+}
+
+.step-info p {
+  margin-bottom: 10px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Fertilizer & Pesticide Items */
+.fertilizer-cards,
+.pest-cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.fert-item,
+.pest-item {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.fert-item button,
+.pest-item button {
+  margin-top: 8px;
+  background: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* AI Box */
+.ai-box {
+  margin-top: 12px;
+  background: #e8f5e9;
+  padding: 10px;
+  border-left: 4px solid #2e7d32;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .step-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-info {
+    text-align: center;
+  }
+
+  .step-image {
+    width: 100%;
+    height: 220px;
+  }
+}

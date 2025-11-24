@@ -1,0 +1,207 @@
+/* General page layout */
+.farming-detail-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Back button */
+.back-btn {
+  margin-bottom: 15px;
+}
+.back-btn a {
+  text-decoration: none;
+  color: #2a7a2a;
+  font-weight: bold;
+}
+.back-btn a:hover {
+  text-decoration: underline;
+}
+
+/* Page title */
+.page-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #1a5e1a;
+}
+
+/* Intro text */
+.intro {
+  background: #f0f9f0;
+  border-left: 4px solid #2a7a2a;
+  padding: 12px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Steps section */
+.steps-wrap {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.step-card {
+  display: flex;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.step-img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+}
+.step-body {
+  padding: 15px;
+  flex: 1;
+}
+.step-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #2a7a2a;
+}
+.step-desc {
+  margin-bottom: 10px;
+}
+.ai-tip {
+  background: #f9f9f9;
+  border-left: 3px solid #ff9800;
+  padding: 8px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.test-cta {
+  margin-top: 10px;
+}
+.book-test-btn {
+  display: inline-block;
+  background: #2a7a2a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+.book-test-btn:hover {
+  background: #1a5e1a;
+}
+
+/* Fertilizer & pesticide section */
+.fert-section {
+  margin-top: 40px;
+}
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #1a5e1a;
+}
+.small-note {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+.fert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+.fert-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+.fert-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.fert-body {
+  padding: 12px;
+}
+.fert-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+.fert-use {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+.fert-price {
+  font-weight: bold;
+  color: #2a7a2a;
+  margin-bottom: 10px;
+}
+.fert-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-to-cart {
+  background: #ff9800;
+  border: none;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.add-to-cart:hover {
+  background: #e68900;
+}
+.view-link {
+  text-decoration: none;
+  color: #2a7a2a;
+  font-weight: 500;
+}
+.view-link:hover {
+  text-decoration: underline;
+}
+
+/* Badges for fertilizers vs pesticides */
+.fert-name::before {
+  content: "🌱 ";
+  color: #2a7a2a;
+}
+.fert-card.pesticide .fert-name::before {
+  content: "🧪 ";
+  color: #c62828;
+}
+.fert-card.pesticide .fert-price {
+  color: #c62828;
+}
+
+/* Help section */
+.help-section {
+  margin-top: 40px;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 6px;
+}
+.help-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+.help-list li {
+  margin-bottom: 8px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .step-card {
+    flex-direction: column;
+  }
+  .step-img {
+    width: 100%;
+    height: 200px;
+  }
+}

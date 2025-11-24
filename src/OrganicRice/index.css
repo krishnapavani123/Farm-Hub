@@ -1,0 +1,115 @@
+.rice-page {
+  max-width: 1100px;
+  margin: 20px auto 60px;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Step Cards */
+.steps-section {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.step-card {
+  display: flex;
+  gap: 18px;
+  background: white;
+  padding: 18px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.07);
+}
+
+.step-img {
+  width: 260px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.step-info h2 {
+  font-size: 1.3rem;
+  color: #2e7d32;
+  margin: 0 0 8px;
+}
+
+.ai-tip {
+  background: #eef9f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  color: #1b5e20;
+  margin-top: 8px;
+}
+
+/* Fert Grids */
+.fert-title {
+  margin-top: 30px;
+  color: #1b5e20;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+.fert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.fert-card {
+  background: white;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.fert-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Buttons */
+.add-to-cart {
+  width: 100%;
+  margin-top: 8px;
+  background: #2e7d32;
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-link {
+  display: block;
+  margin-top: 8px;
+  padding: 10px;
+  background: #e8f5e9;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #1b5e20;
+  font-weight: 700;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .step-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .step-img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .fert-grid {
+    grid-template-columns: 1fr;
+  }
+}

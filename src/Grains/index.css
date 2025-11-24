@@ -1,0 +1,113 @@
+.crops-page {
+  padding: 50px 40px;
+  background: linear-gradient(180deg, #f8f9fa, #eef2e6);
+  min-height: 100vh;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.back-btn {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.back-btn a:hover {
+  color: #1b5e20;
+}
+
+.page-title {
+  font-size: 2.3rem;
+  color: #2e7d32;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* 🌾 Grid container */
+.crops-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-items: center;
+}
+
+/* 🖼️ Crop card */
+.crop-card {
+  position: relative;
+  width: 220px; /* fixed narrow width */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.crop-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* 🌿 Tall images */
+.grain-image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/* 🏷️ Overlay text */
+.crop-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 10px 0;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* 📱 Responsive tweaks */
+@media (max-width: 992px) {
+  .crops-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .crop-card {
+    width: 200px;
+  }
+
+  .grain-image {
+    height: 420px;
+  }
+}
+
+@media (max-width: 600px) {
+  .crops-container {
+    grid-template-columns: 1fr;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .crop-card {
+    width: 250px;
+  }
+
+  .grain-image {
+    height: 400px;
+  }
+}

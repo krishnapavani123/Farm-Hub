@@ -1,0 +1,167 @@
+/* MAIN PAGE WRAPPER */
+.mach-page {
+  padding: 40px;
+  background: #f3f7ec;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Back Button */
+.back-btn a {
+  text-decoration: none;
+  color: #388e3c;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Title */
+.page-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2e7d32;
+}
+
+/* SEARCH BAR */
+.search-box {
+  width: 60%;
+  max-width: 400px;
+  padding: 12px 18px;
+  margin: 25px auto 45px auto;
+  display: block;
+  border: 2px solid #4caf50;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  outline: none;
+  transition: 0.3s;
+}
+
+.search-box:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 6px rgba(46, 125, 50, 0.4);
+}
+
+/* GRID — LARGE DEVICES */
+.mach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+/* CARD — LARGE DEVICES */
+.mach-card {
+  width: 360px;
+  height: 340px;
+  border-radius: 18px;
+  overflow: hidden;
+  text-decoration: none;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.mach-card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.mach-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+/* NAME OVERLAY */
+.mach-name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* VIEW DETAILS BUTTON */
+.view-details-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  background: #2e7d32;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.view-details-btn:hover {
+  background: #1b5e20;
+}
+
+/* -------------------- */
+/* RESPONSIVE DESIGN */
+/* -------------------- */
+
+/* MEDIUM DEVICES — Tablets */
+@media (max-width: 992px) {
+  .mach-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .mach-card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .mach-image {
+    height: 160px;
+  }
+
+  .mach-name {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+}
+
+/* SMALL DEVICES — Mobile */
+@media (max-width: 600px) {
+  .mach-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .mach-card {
+    width: 90%;
+    height: 300px;
+  }
+
+  .mach-image {
+    height: 150px;
+  }
+
+  .mach-name {
+    font-size: 1rem;
+  }
+
+  .search-box {
+    width: 85%;
+    max-width: none;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .page-title {
+    font-size: 1.8rem;
+  }
+}

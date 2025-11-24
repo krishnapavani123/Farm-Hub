@@ -1,0 +1,220 @@
+.farming-detail-page {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  font-family: "Inter", sans-serif;
+}
+
+.back-btn a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.intro {
+  font-size: 15px;
+  margin: 10px 0 20px;
+  text-align: center;
+  color: #444;
+}
+
+.steps-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.step-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  animation: fadeInUp 0.5s ease;
+}
+
+.step-img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.step-body {
+  padding: 15px;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step-desc {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.ai-tip {
+  background: #eaf4ff;
+  padding: 10px;
+  border-left: 4px solid #0077ff;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.book-test-btn {
+  display: inline-block;
+  padding: 8px 14px;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.test-cta {
+  margin-top: 10px;
+}
+
+
+/* Fertilizer Section */
+.fert-section {
+  margin-top: 35px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.small-note {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+.fert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 15px;
+}
+
+.fert-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  animation: fadeInUp 0.4s ease;
+}
+
+.fert-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.fert-body {
+  margin-top: 10px;
+}
+
+.fert-name {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fert-use {
+  font-size: 13px;
+  color: #666;
+  margin: 6px 0;
+  min-height: 35px;
+}
+
+.fert-price {
+  font-size: 15px;
+  font-weight: 600;
+  color: #0a7a00;
+  margin-bottom: 10px;
+}
+
+.fert-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+.add-to-cart {
+  padding: 7px 10px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.view-link {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+
+/* Help Section */
+.help-section {
+  margin-top: 40px;
+}
+
+.help-list {
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.help-list li {
+  margin-bottom: 8px;
+}
+
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+  .step-img {
+    height: 160px;
+  }
+
+  .fert-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .fert-img {
+    height: 120px;
+  }
+}

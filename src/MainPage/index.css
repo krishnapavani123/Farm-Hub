@@ -1,0 +1,349 @@
+/* index.css – MainPage Styling */
+
+/* Global Resets */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f9fdf8;
+  color: #333;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  background: url("https://i.pinimg.com/1200x/37/02/2b/37022b1b2dd461686f7e2d6d0ffc2c5b.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 8px;
+  width: 80%;
+}
+
+.hero-quote {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero-subtext {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Mission Section */
+.aim-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #e8f5e9;
+  border-top: 4px solid #81c784;
+}
+
+.aim-section h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 1rem;
+}
+
+.aim-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  width: 70%;
+  margin: 0 auto;
+  color: #444;
+}
+
+/* Carousel */
+.farm-carousel {
+  width: 90%;
+  margin: 3rem auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Smart Crops */
+.smart-crops {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.smart-crops h2 {
+  font-size: 2rem;
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.crop-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+}
+
+.crop-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.crop-card:hover {
+  transform: scale(1.05);
+}
+
+.crop-card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.crop-card p {
+  margin-top: 0.8rem;
+  font-weight: 600;
+}
+
+/* Innovation Section */
+.innovation-section {
+  background: #f1f8e9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.innovation-section h2 {
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.innovation-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.innovation-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.innovation-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Farmer Stories */
+.stories-section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.stories-section h2 {
+  color: #2e7d32;
+  margin-bottom: 2rem;
+}
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.story-card {
+  background: #f9fff9;
+  border-left: 5px solid #66bb6a;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.story-card p {
+  font-style: italic;
+}
+
+.story-card h4 {
+  margin-top: 1rem;
+  color: #388e3c;
+}
+
+.cta-btn {
+  margin-top: 2rem;
+  padding: 0.8rem 1.5rem;
+  background: #66bb6a;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background: #388e3c;
+}
+
+/* Impact Section */
+.impact-section {
+  background: #e8f5e9;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.impact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.impact-item h3 {
+  font-size: 2rem;
+}
+
+.impact-item p {
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+
+/* Get Involved */
+.get-involved {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.involved-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.involved-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.involved-card:hover {
+  transform: scale(1.03);
+}
+
+.involved-card button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.involved-card button:hover {
+  background: #2e7d32;
+}
+
+/* Footer */
+.footer {
+  background: #1b5e20;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.footer-quote {
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .hero-quote {
+    font-size: 1.5rem;
+  }
+
+  .aim-section p {
+    width: 90%;
+  }
+
+  .cta-btn {
+    width: 100%;
+  }
+
+  .involved-grid, .innovation-grid, .stories-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* Smart Crops Section */
+.smart-crops {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: #f1f8e9;
+  overflow: hidden;
+}
+
+.smart-crops h2 {
+  color: #2e7d32;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Horizontal Scrolling Carousel */
+.scroll-gallery {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.scroll-track {
+  display: flex;
+  width: calc(250px * 16); /* number of images * image width */
+  animation: scroll 30s linear infinite;
+}
+
+.scroll-track img {
+  width: 250px;
+  height: 180px;
+  margin: 0 10px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.scroll-track img:hover {
+  transform: scale(1.05);
+}
+
+/* Infinite Scroll Animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .scroll-track img {
+    width: 180px;
+    height: 130px;
+  }
+}
